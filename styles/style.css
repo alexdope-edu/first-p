@@ -16,52 +16,53 @@
   background-color: #f2f2f2;
   display: flex;
   position: relative;
-  margin-bottom: 100px;
-  overflow: hidden;
+ 
+
   /* выше установили ограничения для секции */
 }
 
-.logo_place_header {
-  position: absolute;
-  top: 30px;
-  order: 1;
-  left: 64px;
+.logo {
   width: 228px;
   height: 32px;
-  background-position: center;
-  background-size: contain;
-  background-image: url(../images/logo_place_header.svg);
-  background-repeat: no-repeat;
+}
+.logo_place_header {
+  position: absolute;
+  margin-left: 64px;
+  margin-top: 30px;
 }
 .header__title {
-  position: relative;
+  display: flex;
   width: 730px;
+  align-items: center;
+  margin-left: 64px;
   font-size: 102px;
   line-height: 96px;
-  left: 64px;
   font-weight: bold;
-  margin-top: auto;
-  margin-bottom: auto;
-  display:inline-block;
+  z-index: 3;
 }
 .header__subtitle {
   position: absolute;
   line-height: 25px;
   font-size: 18px;
+  font-weight: normal;
   bottom: 30px;
   left: 64px;
+  margin: 0;
   width: 388px;
+  z-index: 2;
 }
-.link {
+.header__link {
   color: #2F80ed;
   text-decoration: none;
 }
 .header__main-illustration {
   position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 765px;
+  object-position: right bottom;
+  object-fit: cover;
   height: 608px;
+  width: 765px;
+  right: 0;
+  bottom: 0%;
   z-index: 1;
 }
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -69,9 +70,9 @@
   position: absolute;
   height: 568px;
   width: 568px;
-  background-color: #2F80ed;
-  top: 64px;
+  background-color: #2f80ed;
   right: 0;
+  top: 64px;
 }
 .description {
   margin-top: 100px;
@@ -113,6 +114,10 @@
   font-weight: bold;
   font-size: 24px;
 }
+.digits {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
 .section-title {
   display: flex;
   justify-content: center;
@@ -121,8 +126,9 @@
   font-weight: bold;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 100px;
+  margin-top: 0;
   margin-bottom: 20px;
+  width: 60%;
 }
 .section-subtitle {
   display: flex;
@@ -133,20 +139,94 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
-  margin-bottom: 60px;
+  margin-bottom: 0;
+  width: 60%;
+}
+.table {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1100px;
+}
+.table__cell {
+  width: 250px;
+  margin-top: 60px;
+}
+.table-heading {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+.table__text {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.feynman {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  height: 890px;
+  margin-top: 100px;
+  background-color: #f2f2f2;
+}
+.feynman__title {
+  text-align: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-top: 100px;
+  font-size: 120px;
+  line-height: 1.15;
+  font-weight: bold;
+  width: 648px;
+  z-index: 1;
+
+}
+.feynman__subtitle {
+  text-align: center;
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: normal;
+  margin-top: 70px;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+}
+.feynman__link {
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  right: 48px;
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #2f80ed;
+}
+.feynman__image {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 867px;
+  height: 637px;
+
+
 }
 
 
 
-
-
-
-
-
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
+ /* и элемента с модификатором вида ключ-значение */
+ .table__cell_theme_dark {
   width: 200px;
   color: white;
   margin-right: 0;
   margin-top: 80px;
-}
