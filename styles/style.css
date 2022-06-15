@@ -8,7 +8,6 @@
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
-
 .header {
   height: 100vh;
   min-height: 600px;
@@ -18,7 +17,6 @@
   position: relative;
   /* выше установили ограничения для секции */
 }
-
 .logo {
   width: 228px;
   height: 32px;
@@ -72,7 +70,6 @@
   right: 0;
   top: 64px;
 }
-
 .two-columns {
   display: flex;
   justify-content: space-between;
@@ -230,4 +227,58 @@
   z-index: 3;
 }
  /* и элемента с модификатором вида ключ-значение */
- 
+.footer {
+  display: flex;
+  justify-content: center;
+  min-height: 350px;
+  background-color: #1f1f1f;
+  color: white;
+}
+.footer__columns {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 90%;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+.footer__column_content_copyrigth {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 711px;
+}
+.footer__author {
+  line-height: 24px;
+  font-size: 18px;
+  font-weight: normal;
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+.footer__column-heading {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+.footer__column-links {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+.footer__column-link {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  text-decoration: none;
+} 
+.footer__social-icon {
+  margin-right: 10px;
+}
+.footer__list {
+  padding: unset;
+  list-style-type: none;
+}
