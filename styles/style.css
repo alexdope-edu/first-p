@@ -23,8 +23,8 @@
 }
 .logo_place_header {
   position: absolute;
-  margin-left: 64px;
-  margin-top: 30px;
+  left: 64px;
+  top: 30px;
 }
 .header__title {
   display: flex;
@@ -100,7 +100,9 @@
 .two-columns__span-accent {
   font-weight: bold;
 }
-
+.digits {
+ 
+}
 .section-title {
   display: flex;
   justify-content: center;
@@ -123,7 +125,7 @@
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  width: 60%;
+  max-width: 60%;
 }
 .table {
   display: flex;
@@ -242,7 +244,7 @@
   margin-top: 60px;
   margin-bottom: 40px;
 }
-.footer__column_content_copyrigth {
+.footer__column_content_copyright {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
