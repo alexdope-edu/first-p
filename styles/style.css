@@ -27,10 +27,12 @@
   top: 30px;
 }
 .header__title {
-  display: flex;
-  max-width: 730px;
-  align-items: center;
+  text-align: left ;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: auto;
   margin-left: 64px;
+  max-width: 730px;
   font-size: 102px;
   line-height: 96px;
   font-weight: bold;
@@ -100,12 +102,8 @@
 .two-columns__span-accent {
   font-weight: bold;
 }
-.digits {
- 
-}
 .section-title {
-  display: flex;
-  justify-content: center;
+  text-align: center;
   font-size: 64px;
   line-height: 1.15;
   font-weight: bold;
@@ -116,8 +114,7 @@
   width: 60%;
 }
 .section-subtitle {
-  display: flex;
-  justify-content: center;
+  text-align: center;
   font-size: 24px;
   line-height: 34px;
   font-weight: normal;
@@ -281,6 +278,7 @@
   margin-right: 10px;
 }
 .footer__list {
+  margin: unset;
   padding: unset;
   list-style-type: none;
 }
