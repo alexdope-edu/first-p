@@ -1,3 +1,29 @@
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+}
+to {
+    transform: rotate(360deg);
+}
+    
+} 
+.rotation {
+  animation-name: rotation;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-delay: 0;
+  animation-timing-function: linear;
+}
+
+ a {
+  opacity: 1;
+}
+ a:hover {
+  opacity: 0,1;
+  transition: .1s ease;
+}
+
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -71,12 +97,16 @@
   background-color: #2f80ed;
   right: 0;
   top: 64px;
+  transform: rotate(-15deg);
 }
 .two-columns {
   display: flex;
   justify-content: space-between;
   width: 80%;
-  margin: 100px auto;
+  margin-top: 100px;
+  margin-bottom: 0;
+  margin-right: auto;
+  margin-left: auto;
 }
 .two-columns__brief {
   max-width: 175px;
@@ -102,60 +132,82 @@
 .two-columns__span-accent {
   font-weight: bold;
 }
-.section-title {
-  text-align: center;
-  font-size: 64px;
-  line-height: 1.15;
-  font-weight: bold;
-  margin-left: auto;
+
+.techniques {
+  margin-top: 100px;
+  margin-left:  auto;
   margin-right: auto;
-  margin-top: 0;
-  margin-bottom: 20px;
-  width: 60%;
+  margin-bottom: 100px;
+  width: 80%;
 }
-.section-subtitle {
-  text-align: center;
-  font-size: 24px;
-  line-height: 34px;
-  font-weight: normal;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
-  margin-bottom: 0;
-  max-width: 60%;
-}
-.table {
+
+.cards {
+  max-width: 920px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  /* как только добавляю wrap, все элементы встают в одну неровную колонку 
   flex-wrap: wrap;
+  */
   margin-left: auto;
   margin-right: auto;
-  width: 1100px;
 }
-.table__cell {
-  width: 250px;
+.cards__item {
+  
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   margin-top: 60px;
+  margin-left: 100px;
+  
 }
-.table__heading {
+.cards__image {
+  border-radius: 100%;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 43px;
+  width: 160px;
+  height: 160px;
+}
+.cards__title {
+  margin: 0;
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
-  margin-top: 0;
-  margin-bottom: 0;
+
 }
-.table__text {
-  line-height: 1.2;
+.cards__description {
+  line-height: 23px;
   font-size: 18px;
   font-weight: normal;
-  margin-top: 20px;
+  margin-top: 16px;
   margin-bottom: 0;
+}
+
+.video {
+  
+}
+.video__iframes {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+
+}
+.video__iframe {
+ 
+}
+
+.oakley{
+  padding-top: 160px;
+  background-color: #f2f2f2;
+
 }
 .feynman {
   display: flex;
   position: relative;
   flex-direction: column;
   min-height: 890px;
-  margin-top: 100px;
   background-color: #f2f2f2;
 }
 .feynman__title {
@@ -199,6 +251,140 @@
   width: 867px;
   height: 637px;
 }
+.section-title {
+  text-align: center;
+  font-size: 64px;
+  line-height: 1.15;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  width: 60%;
+}
+.section-subtitle {
+  text-align: center;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: normal;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 60%;
+}
+.table {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 1100px;
+}
+.table__cell {
+  width: 250px;
+  margin-top: 60px;
+}
+.table__heading {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.table__text {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.khan {
+  background-color: #f2f2f2;
+  padding: 105px;
+}
+
+.khan__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.khan__autor {
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+  margin-top: 105px;
+  margin-bottom: 0;
+}
+
+.khan__title {
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+
+}
+
+.khan__quot {
+  max-width: 790px;
+  margin-top: 50px;
+  margin-bottom: 36px;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.khan__quot-autor {
+  margin-top: 0;
+  margin-bottom: 10px;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+
+}
+
+.khan__quot-autor-subline {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.khan__book-container {
+  display: flex;
+  margin-top: 68px;
+  margin-bottom: 0;
+}
+   /*По картинке нет других вводных по брифу кроме размера, но она 
+   выглядит более вытянутой, за счёт того, что низ не обрезается как в брифе
+   Как этого достичь? нужно ли что делать в принципе???*/
+
+.khan__book-pic {
+  margin 0;
+  max-width: 620px;
+  max-height: 608px;
+}
+
+.khan__buy-link {
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+  text-decoration: none;
+  margin-left: 48px;
+  margin-right: auto;
+
+}
 
 .kaufman {
   position: relative;
@@ -226,7 +412,22 @@
   z-index: 3;
 }
  /* и элемента с модификатором вида ключ-значение */
-.footer {
+
+ .logo-zone {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin-top: 80px;
+  margin-bottom: 217px; 
+  margin-right: auto;
+  margin-left: auto;
+ }
+ .resourses__logo {
+  width: 270px;
+  height: 38px;
+ }
+
+ .footer {
   display: flex;
   justify-content: center;
   min-height: 350px;
