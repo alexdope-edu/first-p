@@ -15,14 +15,13 @@ to {
   animation-timing-function: linear;
 }
 
- a {
+ /* a {
   opacity: 1;
   transition: opacity 0.5s ease-in-out 0.5s;
 }
  a:hover {
   opacity: 0.5;
-}
-
+} */
 
 .page {
   min-width: 1100px;
@@ -79,6 +78,11 @@ to {
 .header__link {
   color: #2F80ed;
   text-decoration: none;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out 0.5s;
+}
+.header__link:hover {
+  opacity: 0.5;
 }
 
 .header__main-illustration {
@@ -141,7 +145,6 @@ to {
   margin-bottom: 100px;
   width: 80%;
 }
-
 .cards {
   max-width: 920px;
   display: flex;
@@ -152,7 +155,6 @@ to {
   row-gap: unset;
 }
 .cards__item {
-  
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -183,9 +185,6 @@ to {
   margin-bottom: 0;
 }
 
-.video {
-  
-}
 .video__iframes {
   margin-bottom: -50px;
   gap: 20px;
@@ -194,10 +193,6 @@ to {
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
-
-}
-.video__iframe {
- 
 }
 
 .oakley{
@@ -245,6 +240,11 @@ to {
   font-weight: normal;
   text-decoration: none;
   color: #2f80ed;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out 0.5s;
+}
+.feynman__link:hover {
+  opacity: 0.5;
 }
 .feynman__image {
   position: absolute;
@@ -334,9 +334,7 @@ to {
   font-weight: bold;
   margin-top: 0;
   margin-bottom: 0;
-
 }
-
 .khan__quot {
   max-width: 790px;
   margin-top: 50px;
@@ -345,7 +343,6 @@ to {
   font-size: 24px;
   font-weight: normal;
 }
-
 .khan__quot-autor {
   margin-top: 0;
   margin-bottom: 10px;
@@ -354,7 +351,6 @@ to {
   font-weight: bold;
 
 }
-
 .khan__quot-autor-subline {
   margin-top: 0;
   margin-bottom: 0;
@@ -362,28 +358,31 @@ to {
   font-size: 24px;
   font-weight: normal;
 }
-
 .khan__book-container {
   display: flex;
   margin-top: 68px;
   margin-bottom: 0;
   gap: 48px;
 }
-
 .khan__book-pic {
   margin: 0;
   width: 620px;
   height: 608px;
+  object-fit: cover;
+  object-position: top;
 }
-
 .khan__buy-link {
   color: #2F80ed;
   line-height: 42px;
   font-size: 30px;
   font-weight: normal;
   text-decoration: none;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out 0.5s;
 }
-
+.khan__buy-link:hover {
+  opacity: 0.5;
+}
 .kaufman {
   position: relative;
   padding-top: 90px;
@@ -421,11 +420,17 @@ to {
   margin-right: auto;
   margin-left: auto;
  }
- .resourses__logo {
+ .resourсes__link {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out 0.5s;
+}
+.resourсes__link:hover {
+  opacity: 0.5;
+ }
+ .resourсes__logo {
   width: 270px;
   height: 38px;
  }
-
  .footer {
   display: flex;
   justify-content: center;
@@ -473,7 +478,13 @@ to {
   flex-direction: row;
   color: white;
   text-decoration: none;
-} 
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out 0.5s;
+}
+.footer__column-link:hover {
+  opacity: 0.5;
+ }
+
 .footer__social-icon {
   margin-right: 10px;
 }
